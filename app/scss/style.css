@@ -1,0 +1,1044 @@
+@font-face {
+  font-family: Australian Signature;
+  src: url(/fonts/Australian-Signature.otf);
+}
+@font-face {
+  font-family: Nohemi ExtraBold;
+  src: url(/fonts/Nohemi-ExtraBold-BF6438cc5881baf.ttf);
+}
+@font-face {
+  font-family: NohemiBold;
+  src: url(/fonts/Nohemi-VF-BF6438cc58ad63d.ttf);
+}
+@font-face {
+  font-family: NohemiLight;
+  src: url(/fonts/Nohemi-Light-BF6438cc583f70b.otf);
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F9F6EE;
+  color: #1C1C1C;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #1C1C1C;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+footer {
+  position: relative;
+  background-color: #1C1C1C;
+  color: #F9F6EE;
+  height: 10vh;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+footer p {
+  position: relative;
+  top: 2.5rem;
+}
+
+@font-face {
+  font-family: Australian Signature;
+  src: url(/fonts/Australian-Signature.otf);
+}
+@font-face {
+  font-family: Nohemi ExtraBold;
+  src: url(/fonts/Nohemi-ExtraBold-BF6438cc5881baf.ttf);
+}
+@font-face {
+  font-family: NohemiBold;
+  src: url(/fonts/Nohemi-VF-BF6438cc58ad63d.ttf);
+}
+@font-face {
+  font-family: NohemiLight;
+  src: url(/fonts/Nohemi-Light-BF6438cc583f70b.otf);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+.header__brand-text {
+  font-family: "Australian Signature";
+  font-size: 5rem;
+  font-weight: 100;
+  padding-top: 1%;
+}
+.header__links1 {
+  padding-right: 5rem;
+}
+.header__links2 {
+  padding-left: 5rem;
+}
+.header__links1, .header__links2 {
+  position: relative;
+  padding-top: 3%;
+}
+.header__links1 a, .header__links2 a {
+  padding: 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+
+.hero {
+  padding-top: 1%;
+}
+.hero__hero-text {
+  position: relative;
+  letter-spacing: 0.3rem;
+  font-size: 10rem;
+  font-family: "Nohemi ExtraBold";
+  margin-top: 5%;
+  text-align: center;
+  line-height: 12rem;
+}
+.hero__tagline {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero__tagline-text {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 0.3rem;
+}
+.hero__spanL, .hero__spanR {
+  display: block;
+  margin-top: 1.5rem;
+  width: 25%;
+  height: 0.2rem;
+  background-color: #1C1C1C;
+}
+.hero__form-wrapper {
+  width: 20%;
+  max-width: 100%;
+  position: relative;
+  left: 40%;
+  margin-top: 5rem;
+}
+.hero__form-wrapper input {
+  background: #1C1C1C;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-color: #1C1C1C;
+}
+.hero__form-wrapper button {
+  background: #F9F6EE;
+  border-radius: 2rem;
+  aspect-ratio: 1;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+.hero__form-wrapper button:hover {
+  opacity: 0.8;
+}
+.hero__form-wrapper input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.hero__form-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.reservation-container {
+  background-color: #ffffff;
+  padding: 0.7rem;
+  max-width: 100vw;
+  margin: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-container2 {
+  background-color: #F9F6EE;
+  padding: 2rem;
+  border: 5px solid #1C1C1C;
+}
+
+.reservation-form .form-group {
+  margin-bottom: 20px;
+}
+.reservation-form .form-group input,
+.reservation-form .form-group select {
+  background-color: #fbeee0;
+  border: 1.5px solid #1C1C1C;
+  padding: 1.1rem;
+}
+
+.reservation-form .form-group {
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+.reservation-form .form-group label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+  border-color: #ff6b6b;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.reservation-form .form-group {
+  margin-bottom: 20px;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+  border-color: #ff6b6b;
+}
+
+.confirm-reserve-button {
+  position: relative;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  left: 45rem;
+  border-radius: 2rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  line-height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.confirm-reserve-button:hover {
+  background-color: white;
+}
+
+.confirm-reserve-button:active {
+  box-shadow: #422800 0.09px 0.09px 0 0;
+  transform: translate(0.09rem, 0.09rem);
+}
+
+.booking-banner__banner-text {
+  position: relative;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  font-family: "Nohemi ExtraBold";
+  margin-top: 5%;
+  margin-left: 2%;
+  text-align: left;
+}
+.booking-banner__tagline-segment {
+  display: flex;
+  justify-content: left;
+}
+.booking-banner__banner-tagline {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 2%;
+  margin-top: 0.5%;
+}
+.booking-banner__span {
+  position: relative;
+  display: block;
+  width: 76.5vw;
+  height: 0.2rem;
+  margin-top: 1.2%;
+  margin-left: 1%;
+  background-color: #1C1C1C;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+.services-section .card {
+  margin-left: 2%;
+  margin-top: 2.5%;
+  padding: 1rem;
+  width: 95vw;
+  background-color: #F9F6EE;
+  border: 5px solid #1C1C1C;
+  box-shadow: 0 0 0 7px white, 0 0 8px 5px #000;
+}
+.services-section .card .card-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-align: left;
+  align-items: center;
+}
+.services-section .card .card-content__section1 {
+  max-width: 12rem;
+}
+.services-section .card .card-content__section1 .company-name {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.services-section .card .card-content__section1 .ship-name {
+  margin-top: 0.2%;
+  font-size: 1.2rem;
+}
+.services-section .card .card-content__section2 {
+  max-width: 25rem;
+  position: relative;
+  left: 30rem;
+  align-items: center;
+  display: flex;
+}
+.services-section .card .card-content__section2 .arrow-ui {
+  position: relative;
+  width: 4rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem;
+}
+.services-section .card .card-content__section2 .locations1,
+.services-section .card .card-content__section2 .locations2 {
+  position: relative;
+  margin-top: 2.5%;
+}
+.services-section .card .card-content__section2 .locations1__loc,
+.services-section .card .card-content__section2 .locations2__loc {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.services-section .card .card-content__section2 .locations1__planet,
+.services-section .card .card-content__section2 .locations2__planet {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.services-section .card .card-content .submit-button {
+  position: relative;
+  left: 62rem;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 2rem;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  line-height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.services-section .card .card-content .submit-button:hover {
+  background-color: #fff;
+}
+.services-section .card .card-content .submit-button:active {
+  box-shadow: #422800 0.09px 0.09px 0 0;
+  transform: translate(0.09rem, 0.09rem);
+}
+
+.confirmed-banner__banner-text {
+  position: relative;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  font-family: "Nohemi ExtraBold";
+  margin-top: 5%;
+  margin-left: 2%;
+  text-align: left;
+}
+.confirmed-banner__span1 {
+  position: relative;
+  display: block;
+  width: 76.5vw;
+  height: 0.2rem;
+  margin-top: 1.2%;
+  margin-left: 2%;
+  background-color: #1C1C1C;
+}
+.confirmed-banner__tagline {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.boarding-group {
+  display: flex;
+  justify-content: left;
+}
+.boarding-group .boarding-section {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 2%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.7rem;
+}
+.boarding-group .boarding-section .pass1, .boarding-group .boarding-section .pass2 {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.boarding-group .boarding-section .pass1 {
+  width: 20rem;
+  height: 25rem;
+}
+.boarding-group .boarding-section .pass1 .id {
+  font-family: "Space Mono", monospace;
+  font-weight: 900;
+  font-size: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.boarding-group .boarding-section .pass1 .name-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.boarding-group .boarding-section .pass1 .name-group .passenger-name {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.boarding-group .boarding-section .pass1 .name-group .name {
+  font-family: "Space Mono", monospace;
+  font-weight: 900;
+  font-size: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+  margin-top: -0.5rem;
+}
+.boarding-group .boarding-section .pass1 .seating-ship-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.boarding-group .boarding-section .pass1 .seating-ship-group .seating {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.boarding-group .boarding-section .pass1 .seating-ship-group .seatNo {
+  font-family: "Space Mono", monospace;
+  font-weight: 900;
+  font-size: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+  margin-top: -0.5rem;
+}
+.boarding-group .boarding-section .pass1 .seating-ship-group .ship {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.boarding-group .boarding-section .pass1 .seating-ship-group .shipName {
+  font-family: "Space Mono", monospace;
+  font-weight: 900;
+  font-size: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+  margin-top: -0.3rem;
+}
+.boarding-group .boarding-section .pass1 .boarding-holo-border1 {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C1C1C;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  top: 1rem;
+}
+.boarding-group .boarding-section .pass1 .boarding-holo-border1 .boarding-holo {
+  position: relative;
+  width: 8rem;
+  top: 0.45rem;
+}
+.boarding-group .boarding-section .pass2 {
+  position: relative;
+  width: 40rem;
+  height: 25rem;
+}
+.boarding-group .boarding-section .pass2 .details {
+  display: flex;
+  flex-direction: row;
+}
+.boarding-group .boarding-section .pass2 .details .details1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: left;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.boarding-group .boarding-section .pass2 .details .details1__source {
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.boarding-group .boarding-section .pass2 .details .details1__source .boarding-station {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__source .station {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__source .planet {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__destination {
+  position: relative;
+  margin-left: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__destination .destination-station {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: -1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__destination .station {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__destination .planet {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__boardingtime-gate {
+  position: relative;
+  margin-left: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__boardingtime-gate .boarding-time {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__boardingtime-gate .time {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__boardingtime-gate .gate-no {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+}
+.boarding-group .boarding-section .pass2 .details .details1__boardingtime-gate .gate {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .detail-sep {
+  width: 0.009rem;
+  height: 23rem;
+  background-color: #1C1C1C;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: left;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.boarding-group .boarding-section .pass2 .details .details2__source {
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.boarding-group .boarding-section .pass2 .details .details2__source .launching-on {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2__source .date {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2__source .time {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2__destination {
+  position: relative;
+  margin-left: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2__destination .arriving-on {
+  color: gray;
+  font-weight: 200;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2__destination .date {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .details .details2__destination .time {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  margin-left: 1rem;
+}
+.boarding-group .boarding-section .pass2 .inner-pass2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  height: 25rem;
+  width: 5rem;
+  left: 35rem;
+  top: -24rem;
+  background-color: #1C1C1C;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.boarding-group .boarding-section .pass2 .inner-pass2__crypts {
+  position: relative;
+  top: 1.5rem;
+  left: 1rem;
+  width: 3rem;
+}
+.boarding-group .boarding-section .mid-pass {
+  position: relative;
+  width: 0.009rem;
+  height: 23.5rem;
+  top: 1rem;
+  background-color: white;
+  border: 5px dotted #e4e6e3;
+  z-index: 99;
+}
+.boarding-group .pass-cta-group {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3.5rem;
+}
+.boarding-group .pass-cta-group .download-boarding-button, .boarding-group .pass-cta-group .print-boarding-button {
+  position: relative;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 2rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  line-height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1rem;
+}
+.boarding-group .pass-cta-group .download-boarding-button:hover, .boarding-group .pass-cta-group .print-boarding-button:hover {
+  background-color: white;
+}
+.boarding-group .pass-cta-group .download-boarding-button:active, .boarding-group .pass-cta-group .print-boarding-button:active {
+  box-shadow: #422800 0.09px 0.09px 0 0;
+  transform: translate(0.09rem, 0.09rem);
+}
+.boarding-group .pass-cta-group__g1 .download-boarding-pass {
+  position: relative;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.boarding-group .pass-cta-group__g2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 4rem;
+}
+.boarding-group .pass-cta-group__g2 .print-boarding-pass {
+  position: relative;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.about-banner__banner-text {
+  position: relative;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  font-family: "Nohemi ExtraBold";
+  margin-top: 5%;
+  margin-left: 2%;
+  text-align: left;
+}
+.about-banner__span {
+  position: relative;
+  display: block;
+  width: 76.5vw;
+  height: 0.2rem;
+  margin-top: 1.2%;
+  margin-left: 2%;
+  background-color: #1C1C1C;
+}
+
+.our-mission-container {
+  position: relative;
+  background-color: #1C1C1C;
+}
+.our-mission-container .our-mission {
+  position: inherit;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 2rem;
+  margin-top: 5rem;
+  color: #F9F6EE;
+}
+
+.mission-container {
+  position: relative;
+  background-color: #e4e6e3;
+  width: 90vw;
+  padding: 3rem;
+  border-radius: 0 0 5rem;
+}
+.mission-container .mission {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.what-we-offer-container {
+  position: relative;
+  background-color: #1C1C1C;
+}
+.what-we-offer-container .what-we-offer {
+  position: inherit;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 2rem;
+  margin-top: 5rem;
+  color: #F9F6EE;
+}
+
+.offer-container {
+  position: relative;
+  background-color: #e4e6e3;
+  width: 90vw;
+  padding: 3rem;
+  border-radius: 0 0 5rem;
+}
+.offer-container span {
+  font-size: 1.65rem;
+  font-weight: 900;
+}
+.offer-container li {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.end-text {
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+.wrapper .location-container {
+  padding: 1rem;
+  margin-left: 2.4rem;
+  margin-top: 2.4rem;
+  width: 70rem;
+}
+.wrapper .location-container .location {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.wrapper .location-container .loc-details1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.wrapper .location-container .loc-details2 {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.wrapper .location-container .loc-details3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.wrapper .location-container .offices {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.wrapper .location-container li {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.wrapper .location-container .holochat-container {
+  position: relative;
+  padding-top: 5rem;
+}
+.wrapper .location-container .holochat-container .title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.wrapper .location-container .holochat-container .info {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.wrapper .location-container .holochat-container .holochat-button {
+  position: relative;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 2rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  line-height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1rem;
+}
+.wrapper .location-container .holochat-container .holochat-button:hover {
+  background-color: white;
+}
+.wrapper .location-container .holochat-container .holochat-button:active {
+  box-shadow: #422800 0.09px 0.09px 0 0;
+  transform: translate(0.09rem, 0.09rem);
+}
+.wrapper .divider {
+  width: 0.09rem;
+  background-color: #e4e6e3;
+  height: 50rem;
+  margin: 2rem;
+}
+.wrapper .pulse-section {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .pulse-section .title {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 900;
+  left: 5rem;
+  top: 2.5rem;
+}
+.wrapper .pulse-section .pulse-container {
+  position: relative;
+  top: 3.5rem;
+  left: 5.5rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 100%;
+  background-color: #1C1C1C;
+  opacity: 90%;
+}
+.wrapper .pulse-section .pulse-container .sp {
+  width: 30rem;
+  height: 30rem;
+}
+.wrapper .pulse-section .powered-by-wrapper {
+  position: relative;
+  background-color: #1C1C1C;
+  border-radius: 10rem;
+  height: 4rem;
+  width: 20rem;
+  top: 5rem;
+  left: 5.1rem;
+  text-align: center;
+  align-content: center;
+}
+.wrapper .pulse-section .powered-by-wrapper .powered-by {
+  color: #F9F6EE;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.wrapper .pulse-section .powered-by-wrapper .powered-by span {
+  position: relative;
+  top: 0.2rem;
+  color: #F9F6EE;
+  font-weight: 900;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */

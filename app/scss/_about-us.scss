@@ -1,0 +1,90 @@
+.about-banner {
+    &__banner-text {
+        position: relative;
+        letter-spacing: 0.1rem;
+        font-size: 3rem;
+        font-family: "Nohemi ExtraBold";
+        margin-top: 5%;
+        margin-left: 2%;
+        text-align: left;
+    }
+
+    &__span {
+        position: relative;
+        display: block;
+        width: 76.5vw;
+        height: 0.2rem;
+        margin-top: 1.2%;
+        margin-left: 2%;
+        background-color: $primaryColor;
+    }
+}
+
+.our-mission-container {
+    position: relative;
+    background-color: $primaryColor;
+
+    .our-mission {
+        position: inherit;
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 2rem;
+        margin-top: 5rem;
+        color: $bgColor;
+    }
+}
+
+.mission-container {
+    position: relative;
+    background-color: $secondaryColor;
+    width: 90vw;
+    padding: 3rem;
+    border-radius: 0 0 5rem;
+
+    .mission {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+    }
+}
+
+
+
+.what-we-offer-container{
+    position: relative;
+    background-color: $primaryColor;
+
+    .what-we-offer{
+        position: inherit;
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 2rem;
+        margin-top: 5rem;
+        color: $bgColor;
+    }
+
+}
+
+.offer-container{
+    position: relative;
+    background-color: $secondaryColor;
+    width: 90vw;
+    padding: 3rem;
+    border-radius: 0 0 5rem;
+
+    span{
+        font-size: 1.65rem;
+        font-weight: 900;
+    }
+
+    li{
+        font-size: 1.5rem;
+        font-weight:600;
+        line-height: 2.5rem;
+    }
+}
+
+.end-text{
+    font-size: 1.5rem;
+}

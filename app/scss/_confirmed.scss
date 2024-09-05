@@ -1,0 +1,441 @@
+.confirmed-banner {
+
+    &__banner-text {
+        position: relative;
+        letter-spacing: 0.1rem;
+        font-size: 3rem;
+        font-family: "Nohemi ExtraBold";
+        margin-top: 5%;
+        margin-left: 2%;
+        text-align: left;
+    }
+
+    &__span1 {
+        position: relative;
+        display: block;
+        width: 76.5vw;
+        height: 0.2rem;
+        margin-top: 1.2%;
+        margin-left: 2%;
+        background-color: $primaryColor;
+    }
+
+    &__tagline {
+        position: relative;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+
+}
+.boarding-group{
+    display: flex;
+    justify-content: left;
+    .boarding-section{
+        display: flex;
+        margin-top: 2%;
+        margin-left: 2%;
+        width: fit-content;
+        padding: 0.7rem;
+    
+        .pass1,.pass2{
+            position: relative;
+            background-color: #ffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px  rgba(0, 0, 0, 0.1);
+            
+        }
+        .pass1{
+            width: 20rem;
+            height: 25rem;
+            //border-left: 2px solid $primaryColor;
+            //border-top: 2px solid $primaryColor;
+            //border-bottom: 2px solid $primaryColor;
+            //border-right: 3px solid $primaryColor;
+    
+            .id{
+                font-family: "Space Mono", monospace;
+                font-weight: 900;
+                font-size: 1rem;
+                width: fit-content;
+                margin-left: 1rem;
+                margin-top: 1rem;
+            }
+    
+            .name-group{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                width: fit-content;
+                height: fit-content;
+    
+                .passenger-name{
+                    color: gray;
+                    font-weight: 200;
+                    font-family: "Space Mono", monospace;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    font-size: 0.8rem;
+                }
+                .name{
+                    font-family: "Space Mono", monospace;
+                    font-weight: 900;
+                    font-size: 1.5rem;
+                    width: fit-content;
+                    margin-left: 1rem;
+                    margin-top: -0.5rem;
+                }
+            }
+    
+            .seating-ship-group{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                .seating{
+                    color: gray;
+                    font-weight: 200;
+                    font-family: "Space Mono", monospace;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    font-size: 0.8rem;
+                }
+                .seatNo{
+                    font-family: "Space Mono", monospace;
+                    font-weight: 900;
+                    font-size: 1.5rem;
+                    width: fit-content;
+                    margin-left: 1rem;
+                    margin-top: -0.5rem;
+                }
+    
+                .ship{
+                    color: gray;
+                    font-weight: 200;
+                    font-family: "Space Mono", monospace;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    font-size: 0.8rem;
+                }
+    
+                .shipName{
+                    font-family: "Space Mono", monospace;
+                    font-weight: 900;
+                    font-size: 1.5rem;
+                    width: fit-content;
+                    margin-left: 1rem;
+                    margin-top: -0.3rem;
+                }
+            }
+    
+    
+            .boarding-holo-border1{
+                position: relative;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                background-color: $primaryColor;
+                width: 8rem;
+                height: 8rem;
+                border-radius: 100%;
+                top: 1rem;
+                .boarding-holo{
+                    position: relative;
+                    width: 8rem;
+                    top: 0.45rem;
+                }
+            }    
+            
+        }
+        .pass2{
+            position: relative;
+            width: 40rem;
+            height: 25rem;
+            //border-right: 2px solid $primaryColor;
+            //border-top: 2px solid $primaryColor;
+            //border-bottom: 2px solid $primaryColor;
+    
+            .details{
+                display: flex;
+                flex-direction: row;
+                .details1{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    align-items: left;
+                    height: fit-content;
+        
+                    &__source{
+                        position: relative;
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                        width: fit-content;
+            
+                        .boarding-station{
+                            color: gray;
+                            font-weight: 200;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                            font-size: 0.8rem;
+                            margin-top: 0.1rem;
+                        }
+                        .station{
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+            
+                        .planet{
+                            font-size: 1rem;
+                            font-weight: 300;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+                    }
+        
+                    &__destination{
+                        position: relative;
+                        margin-left: 1rem;
+                        width: fit-content;
+                        margin-top: 2rem;
+            
+                        .destination-station{
+                            color: gray;
+                            font-weight: 200;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                            font-size: 0.8rem;
+                            margin-top: -1rem;
+                        }
+            
+                        .station{
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+            
+                        .planet{
+                            font-size: 1rem;
+                            font-weight: 300;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+                    }
+    
+                    &__boardingtime-gate{
+                        position: relative;
+                        margin-left: 1rem;
+                        width: fit-content;
+                        margin-top: 2rem;
+            
+                        .boarding-time{
+                            color: gray;
+                            font-weight: 200;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                            font-size: 0.8rem;
+                            margin-top: 0.1rem;
+                        }
+            
+                        .time{
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+            
+                        .gate-no{
+                            color: gray;
+                            font-weight: 200;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                            font-size: 0.8rem;
+                            margin-top: 0.7rem;
+                        }
+    
+                        .gate{
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+    
+                .detail-sep{
+                    width: 0.009rem;
+                    height: 23rem;
+                    background-color: $primaryColor;
+                    margin-left: 2rem;
+                    margin-top: 1rem;
+                }
+    
+                .details2{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    align-items: left;
+                    height: fit-content;
+                    width: fit-content;
+        
+                    &__source{
+                        position: relative;
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                        width: fit-content;
+            
+                        .launching-on{
+                            color: gray;
+                            font-weight: 200;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                            font-size: 0.8rem;
+                            margin-top: 0.1rem;
+                        }
+                        .date{
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+            
+                        .time{
+                            font-size: 1.2rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+                    }
+        
+                    &__destination{
+                        position: relative;
+                        margin-left: 1rem;
+                        width: fit-content;
+                        margin-top: 2rem;
+            
+                        .arriving-on{
+                            color: gray;
+                            font-weight: 200;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                            font-size: 0.8rem;
+                            margin-top: 0.1rem;
+                        }
+            
+                        .date{
+                            font-size: 1.5rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+            
+                        .time{
+                            font-size: 1.2rem;
+                            font-weight: 900;
+                            font-family: "Space Mono", monospace;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+    
+    
+            }
+            
+    
+            .inner-pass2{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                height: 25rem;
+                width: 5rem;
+                left: 35rem;
+                top: -24rem;
+                background-color: $primaryColor;
+                border-radius: 0 1rem 1rem 0;
+                box-shadow: 0 10px 25px  rgba(0, 0, 0, 0.1);
+    
+                &__crypts{
+                    position: relative;
+                    top: 1.5rem;
+                    left: 1rem;
+                    width: 3rem;
+                }
+            }
+        }
+    
+        .mid-pass{
+            position: relative;
+            width: 0.009rem;
+            height: 23.5rem;
+            top: 1rem;
+            background-color: #ffff;
+            border: 5px dotted $secondaryColor;
+            z-index: 99;
+        }
+    }
+
+    .pass-cta-group{
+        position: relative;
+        height: fit-content;
+        margin: 3.5rem;
+        .download-boarding-button, .print-boarding-button{
+            position: relative;
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 2rem;
+            max-width: fit-content;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 1.2rem;
+            padding: 0 2rem;
+            line-height: 3rem;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-top: 1rem;
+            
+        }
+
+        .download-boarding-button:hover,.print-boarding-button:hover {
+            background-color: #ffff;
+        }
+        
+        .download-boarding-button:active, .print-boarding-button:active {
+            box-shadow: #422800 0.09px 0.09px 0 0;
+            transform: translate(0.09rem, 0.09rem);
+        }
+        &__g1{
+            .download-boarding-pass{
+                position: relative;
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+
+            
+        }
+
+        &__g2{
+            position: relative;
+            width: fit-content;
+            margin-top: 4rem;
+            .print-boarding-pass{
+                position: relative;
+                font-weight: 900;
+                font-size: 1.5rem;
+        }
+    }
+}
+
+}

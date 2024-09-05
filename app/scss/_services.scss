@@ -1,0 +1,136 @@
+.booking-banner {
+
+    &__banner-text {
+        position: relative;
+        letter-spacing: 0.1rem;
+        font-size: 3rem;
+        font-family: "Nohemi ExtraBold";
+        margin-top: 5%;
+        margin-left: 2%;
+        text-align: left;
+    }
+
+    &__tagline-segment {
+        display: flex;
+        justify-content: left;
+    }
+
+    &__banner-tagline {
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-left: 2%;
+        margin-top: 0.5%;
+    }
+
+    &__span {
+        position: relative;
+        display: block;
+        width: 76.5vw;
+        height: 0.2rem;
+        margin-top: 1.2%;
+        margin-left: 1%;
+        background-color: $primaryColor;
+    }
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+
+    .card {
+        margin-left: 2%;
+        margin-top: 2.5%;
+        padding: 1rem;
+        width: 95vw;
+        background-color: $bgColor;
+        border: 5px solid $primaryColor;
+        box-shadow: 0 0 0 7px #ffff, 0 0 8px 5px #000;
+
+        .card-content {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            max-width: fit-content;
+            text-align: left;
+            align-items: center;
+
+            &__section1 {
+                max-width: 12rem;
+
+                .company-name {
+                    font-size: 2rem;
+                    font-weight: 900;
+                }
+
+                .ship-name {
+                    margin-top: 0.2%;
+                    font-size: 1.2rem;
+                }
+            }
+
+            &__section2 {
+                max-width: 25rem;
+                position: relative;
+                left: 30rem;
+                align-items: center;
+                display: flex;
+
+                .arrow-ui {
+                    position: relative;
+                    width: 4rem;
+                    height: fit-content;
+                    margin: 1rem;
+                }
+
+                .locations1,
+                .locations2 {
+                    position: relative;
+                    margin-top: 2.5%;
+
+                    &__loc {
+                        font-size: 1.5rem;
+                        font-weight: 900;
+                    }
+
+                    &__planet {
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .submit-button {
+                position: relative;
+                left: 62rem;
+                background-color: #fbeee0;
+                border: 2px solid #422800;
+                border-radius: 2rem;
+                box-shadow: #422800 4px 4px 0 0;
+                color: #422800;
+                cursor: pointer;
+                font-weight: 900;
+                font-size: 1.2rem;
+                padding: 0 2rem;
+                line-height: 3rem;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .submit-button:hover {
+                background-color: #fff;
+            }
+
+            .submit-button:active {
+                box-shadow: #422800 0.09px 0.09px 0 0;
+                transform: translate(0.09rem, 0.09rem);
+            }
+
+        }
+    }
+}

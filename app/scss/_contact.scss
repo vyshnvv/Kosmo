@@ -1,0 +1,164 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+
+    .location-container {
+        padding: 1rem;
+        margin-left: 2.4rem;
+        margin-top: 2.4rem;
+        width: 70rem;
+
+        .location {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        .loc-details1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .loc-details2 {
+            margin-top: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .loc-details3 {
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .offices {
+            margin-top: 3rem;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        li {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .holochat-container {
+            position: relative;
+            padding-top: 5rem;
+
+            .title {
+                font-size: 2.5rem;
+                font-weight: 900;
+            }
+
+            .info {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            .holochat-button {
+                position: relative;
+                background-color: #fbeee0;
+                border: 2px solid #422800;
+                border-radius: 2rem;
+                max-width: fit-content;
+                box-shadow: #422800 4px 4px 0 0;
+                color: #422800;
+                cursor: pointer;
+                font-weight: 900;
+                font-size: 1.2rem;
+                padding: 0 2rem;
+                line-height: 3rem;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                margin-top: 1rem;
+            }
+
+            .holochat-button:hover {
+                background-color: #ffff;
+            }
+
+            .holochat-button:active {
+                box-shadow: #422800 0.09px 0.09px 0 0;
+                transform: translate(0.09rem, 0.09rem);
+            }
+
+
+        }
+
+
+    }
+
+    .divider {
+        width: 0.09rem;
+        background-color: $secondaryColor;
+        height: 50rem;
+        margin: 2rem;
+
+    }
+
+    .pulse-section {
+        width:30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .title {
+            position: relative;
+            font-size: 2.5rem;
+            font-weight: 900;
+            left: 5rem;
+            top: 2.5rem;
+        }
+
+        .pulse-container {
+            position: relative;
+            top: 3.5rem;
+            left: 5.5rem;
+            width: 30rem;
+            height: 30rem;
+            border-radius: 100%;
+            background-color: $primaryColor;
+            opacity: 90%;
+
+            .sp {
+                width: 30rem;
+                height: 30rem;
+            }
+
+        }
+
+        .powered-by-wrapper{
+            position: relative;
+            background-color: $primaryColor;
+            border-radius: 10rem;
+            height: 4rem;
+            width: 20rem;
+            top: 5rem;
+            left: 5.1rem;
+            text-align: center;
+            align-content: center;
+            .powered-by{
+                color: $bgColor;
+                font-weight: 500;
+                font-size: 1.4rem;
+                span{
+                    position: relative;
+                    top: 0.2rem;
+                    color: $bgColor;
+                    font-weight: 900;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        
+    }
+
+
+
+}

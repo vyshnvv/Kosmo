@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app/scss/style.css">
+    <title>Kosmo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__links1">
+            <a href="index.html">Home</a>
+            <a href="services.html">Book a Trip</a>
+        </div>
+        <h1 class="header__brand-text">Kosmo</h1>
+        <div class="header__links2">
+            <a href="about-us.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+    <div class="booking-banner">
+        <h3 class="booking-banner__banner-text">Reserve Your Interstellar Journey</h3>
+        <div class="booking-banner__tagline-segment">
+            <p class="booking-banner__banner-tagline">Chart Your Course Among the Stars</p>
+            <span class="booking-banner__span"></span>
+        </div>
+    </div>
+
+    <div class="reservation-container">
+        <div class="reservation-container2">
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label class="fullname" for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label class="email" for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label class="phNo" for="phNo">Phone No:</label>
+                    <input type="number" id="phNo" placeholder="Enter your phone number" required pattern="[0-9]{11}">
+                </div>
+                <div class="form-group">
+                    <label for="date">Launch Station:</label>
+                    <select name="launch-station">
+                        <option value="" disabled selected>Select launch station</option>
+                        <option value="Terra Base Alpha (Earth)">Terra Base Alpha (Earth)</option>
+                        <option value="Lunar Gateway Hub (Moon)">Lunar Gateway Hub (Moon)</option>
+                        <option value="Helios Launch Complex (Mars)">Helios Launch Complex (Mars)</option>
+                        <option value="Orion Station (Earth’s Orbit)">Orion Station (Earth’s Orbit)</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label class="deptDate" for="deptDate">Departure Date:</label>
+                    <input type="date" id="deptDate" placeholder="Preferred launch date" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Destination Station:</label>
+                    <select name="destination-station">
+                        <option value="" disabled selected>Select destination station</option>
+                        <option value="Europa Landing Bay (Europa)">Europa Landing Bay (Europa)</option>
+                        <option value="Titan Outpost (Titan)">Titan Outpost (Titan)</option>
+                        <option value="Neptune's Edge Terminal (Neptune)">Neptune's Edge Terminal (Neptune)</option>
+                        <option value="Ceres Station (Ceres)">Ceres Station (Ceres)</option>
+                        <option value="Pluto Port (Pluto)">Pluto Port (Pluto)</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label class="returnDate" for="returnDate">Return Date:</label>
+                    <input type="date" id="returnDate" placeholder="Preferred return date" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Travel Class:</label>
+                    <select name="destination-station">
+                        <option value="" disabled selected>Select travel class</option>
+                        <option value="Economy (Standard Cabin)">Economy (Standard Cabin)</option>
+                        <option value="Business (Luxury Suite)">Business (Luxury Suite)</option>
+                        <option value="First Class (Space Pod)">First Class (Space Pod)</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Passengers:</label>
+                    <input type="number" id="passengers" min="1" placeholder="Enter number of passengers" required>
+                </div>
+                <div class="form-group">
+                    <label for="accommodation">Accommodation Preferences:</label>
+                    <select name="accommodation">
+                        <option value="" disabled selected>Select accommodation</option>
+                        <option value="Research Lab Quarters (Europa)">Research Lab Quarters (Europa)</option>
+                        <option value="Orbital Habitats (Neptune)">Orbital Habitats (Neptune)</option>
+                        <option value="Miner’s Retreat (Ceres)">Miner’s Retreat (Ceres)</option>
+                        <option value="Star Gazing Domes (Pluto)">Star Gazing Domes (Pluto)</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Preffered Payment Mode:</label>
+                    <select name="payment">
+                    <option value="" disabled selected>Select payment mode</option>
+                        <option value="StarCard">StarCard</option>
+                        <option value="Cosmic Wallet">Cosmic Wallet"</option>
+                        <option value="AstroPay">AstroPay</option>
+                        <option value="Orbital Pay">Orbital Pay</option>
+                    </select>
+                </div>
+            </form>
+            <a href="confirmed.html">
+                <button class="confirm-reserve-button" role="button">Confirm Reservation</button>
+            </a>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <p>&copy; 2075 Kosmos. All Rights Reserved. | Designed for Interplanetary Explorers</p>
+    </footer>
+</body>
+</html>

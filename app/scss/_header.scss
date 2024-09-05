@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+
+    &__brand-text{
+        font-family: "Australian Signature";
+        font-size:5rem;
+        font-weight: 100;
+        padding-top: 1%;
+    }
+
+    &__links1 {
+        padding-right: 5rem;
+    }
+
+    &__links2 {
+        padding-left: 5rem;
+    }
+
+    &__links1,&__links2{
+        position: relative;
+        padding-top: 3%;
+        a{
+            padding: 3rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: $primaryColor;
+        }
+        
+    }
+
+}
+
+
